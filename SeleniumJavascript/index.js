@@ -1,7 +1,7 @@
 const{Builder, By, Key, util} = require("selenium-webdriver");
 
 async function login(){
-    let driver = await new Builder().forBrowser("firefox").build();
+    let driver = await new Builder().forBrowser("chrome").build();
     await driver.get("https://consumer-dev.homexlabs.com/login");
     await driver.findElement(By.id("identifier")).sendKeys("development+test@homex.com");
     await driver.findElement(By.id("secret")).sendKeys("HOMEX@123");
