@@ -1,6 +1,6 @@
 name: test-actions
 
-on:[push]
+on: [push]
 
 jobs:
   test-github-actions:
