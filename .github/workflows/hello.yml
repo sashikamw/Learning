@@ -15,12 +15,14 @@ jobs:
     steps:
       - name: checkout-code
       - uses: actions/checkout@v4
+      
       - name: check-file-on-repo
       - run: ls SeleniumJavascript/package.json
+      
       - name: check-eng-variables
         run: env | sort
 
-  test docker-execution:
+  test-docker-execution:
     runs-on: ubuntu-latest
     steps:
       - name: check-running-docker
