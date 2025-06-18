@@ -22,8 +22,8 @@ jobs:
       - name: check-eng-variables
         run: env | sort
 
-  test-docker-execution:
-    runs-on: ubuntu-latest
-    steps:
-      - name: check-running-docker
-      - uses: docker://hello-world:latest
+  # test-docker-execution:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: check-running-docker
+  #     - uses: docker://hello-world:latest
