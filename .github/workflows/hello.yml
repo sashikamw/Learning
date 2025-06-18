@@ -27,6 +27,3 @@ jobs:
     steps:
       - name: check-running-docker
       - uses: docker://hello-world:latest
-      - run: |
-              ls
-              echo "sashi"
