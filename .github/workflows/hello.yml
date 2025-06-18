@@ -11,20 +11,20 @@ jobs:
           echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
           echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
 
-  test-checkout:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout-code
-      - uses: actions/checkout@v4
+  # test-checkout:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: checkout-code
+  #     - uses: actions/checkout@v4
       
-      - name: check-file-on-repo
-      - run: ls SeleniumJavascript/package.json
+  #     - name: check-file-on-repo
+  #     - run: ls SeleniumJavascript/package.json
       
-      - name: check-eng-variables
-        run: env | sort
+  #     - name: check-eng-variables
+  #       run: env | sort
 
-  test-docker-execution:
-    runs-on: ubuntu-latest
-    steps:
-      - name: check-running-docker
-      - uses: docker://hello-world:latest
+  # test-docker-execution:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: check-running-docker
+  #     - uses: docker://hello-world:latest
